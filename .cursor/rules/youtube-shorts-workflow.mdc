@@ -1,0 +1,31 @@
+---
+description: Core workflow for creating YouTube Shorts and Instagram Reels with HeyGen
+alwaysApply: true
+---
+
+# YouTube Shorts / Instagram Reels Workflow
+
+This repo is used to produce short-form videos (YouTube Shorts + Instagram Reels) using HeyGen for AI voice.
+
+## When the user provides video content, ALWAYS deliver these 3 things (in this order):
+
+1. **Video Title** — catchy, SEO-friendly, under 70 chars, hook-driven.
+2. **HeyGen Voice Script** — follow `voice-script.mdc` rules.
+3. **YouTube Description** — follow `description.mdc` rules.
+
+## Output Format
+
+- Use clear markdown headings (`## 1. Title`, `## 2. Voice Script`, `## 3. Description`).
+- Voice script must be in a single paragraph block (no bullets, no line breaks).
+- Description block should be copy-paste ready (no extra commentary inside it).
+
+## After Delivering Output
+
+- Save the entry under `memory/videos/YYYY-MM-DD-<slug>.md` using `memory/templates/video-template.md`.
+- This builds a searchable archive of past videos for tone consistency and topic reuse.
+
+## Tone Defaults (unless user overrides)
+
+- Storytelling, humanistic, conversational — never sounds like AI.
+- Hook in the first 3 seconds.
+- One clear takeaway per video.
