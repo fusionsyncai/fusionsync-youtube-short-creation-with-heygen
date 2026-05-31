@@ -1,0 +1,34 @@
+---
+description: HeyGen voice script rules for short-form videos
+alwaysApply: true
+---
+
+# HeyGen Voice Script Rules
+
+## Hard Constraints
+
+- **Duration: up to 50 seconds** when read at HeyGen's natural pace (~150 wpm).
+  - Target word count: **110–125 words max** (safe ceiling for 50s).
+- **Format: a single paragraph.** No bullets, no numbered lists, no line breaks inside the script.
+- **Tone: storytelling + humanistic.** Must NOT sound like AI.
+
+## Writing Style
+
+- Open with a hook (question, bold claim, or "imagine if…") within the first sentence.
+- Use contractions ("you're", "it's", "don't") — feels human.
+- Vary sentence length: mix short punchy lines with one longer flowing sentence.
+- Use sensory or emotional words ("felt", "noticed", "shocked", "tiny", "quiet").
+- End with a payoff or call-to-curiosity (NOT a generic "subscribe" line unless asked).
+
+## Avoid
+
+- Robotic phrasing: "In this video we will discuss…", "Today I am going to…", "Furthermore", "Moreover".
+- Lists read out loud ("Number one… number two…").
+- Jargon without a quick plain-language unpack.
+- Repeating the title verbatim.
+
+## Example (Good)
+
+> Ever wonder why your phone battery dies twice as fast after a year? It's not aging — it's a tiny lie your phone tells you. The battery is fine; the software just stops trusting it. I tested this on three old phones and the result genuinely surprised me. One simple reset, and two of them gained back almost a full hour of screen time. Most people throw their phone away before trying it. Try it tonight before you spend a thousand bucks on a new one.
+
+(~95 words, ~45s at 150 wpm — within budget.)

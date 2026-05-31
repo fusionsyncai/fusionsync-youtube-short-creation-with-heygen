@@ -1,0 +1,49 @@
+---
+description: YouTube Shorts description rules (keywords, timestamps @ 120% speed, hashtags)
+alwaysApply: true
+---
+
+# YouTube Short Description Rules
+
+## Required Sections (in order)
+
+1. **Hook line** — 1 sentence repeating the video's core promise (different wording than the title).
+2. **Body** — 2–4 short lines weaving in related keywords and topic titles naturally (not stuffed).
+3. **Timestamps** — adjusted for **120% playback speed** (see formula below).
+4. **Related topics line** — `Related: <topic 1>, <topic 2>, <topic 3>`.
+5. **Hashtags** — 8–15 mixed (broad + niche + trending). One line, space-separated.
+
+## Timestamps @ 120% Speed Rule
+
+The voice script is written at 100% pace, but the final video plays at **120%**.
+Convert every original timestamp using:
+
+```
+displayed_time = original_time / 1.20
+```
+
+Quick reference:
+
+| Original (script) | Displayed (120%) |
+| ----------------- | ---------------- |
+| 0:00              | 0:00             |
+| 0:10              | 0:08             |
+| 0:20              | 0:17             |
+| 0:30              | 0:25             |
+| 0:40              | 0:33             |
+| 0:50              | 0:42             |
+
+Always show timestamps in `M:SS` format and label each segment (e.g. `0:00 Hook`, `0:08 The twist`).
+
+## Keyword Strategy
+
+- Front-load 2–3 primary keywords in the first line.
+- Sprinkle 3–5 long-tail / related keywords across the body.
+- Avoid keyword stuffing; sentences must still read naturally.
+
+## Hashtag Strategy
+
+- 1–2 broad (#shorts #youtubeshorts)
+- 3–5 niche (topic-specific)
+- 2–3 trending or community tags
+- Lowercase, no spaces, no punctuation inside the tag.

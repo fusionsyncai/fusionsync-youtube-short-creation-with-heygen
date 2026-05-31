@@ -1,0 +1,33 @@
+---
+description: HeyGen API credit budget — hard cap of 17 credits per video
+alwaysApply: true
+---
+
+# HeyGen Credit Cap
+
+**Every video generated via HeyGen must cost <= 17 credits. No exceptions.**
+
+## Why
+
+The user has a fixed per-video credit budget. Going over wastes plan credits.
+
+## How it's enforced
+
+- `scripts/generate_video.py` calls `enforce_credit_cap()` BEFORE submitting.
+- It uses a conservative estimate: `(words / 150 wpm) * 2.0 credits/min`.
+- If estimated cost > `MAX_CREDITS_PER_VIDEO` (env var, default 17) → script aborts.
+
+## Rules for the agent
+
+- **Voice script word count must stay <= 125 words** (gives ~50s @ natural pace → safely under 17 credits).
+- **Do not** suggest higher-cost options without flagging the credit impact:
+  - Avatar V engine (`{"type": "avatar_v"}`) — more expensive than the default Avatar IV.
+  - `remove_background: true` — extra cost.
+  - Burn-in captions — extra cost.
+  - Resolutions above 1080p.
+- If the user asks for any of the above, **warn them** and confirm before changing `generate_video.py`.
+
+## Override
+
+- Per-run override: `python scripts/generate_video.py path.md --max-credits 25`
+- Permanent: change `MAX_CREDITS_PER_VIDEO` in `.env`.
